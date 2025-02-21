@@ -1,0 +1,24 @@
+#!/bin/bash
+
+Xojiakbarxon setup script
+
+echo "Welcome to Xojiakbarxon setup!"
+
+Updating packages
+
+echo "Updating packages..." pkg update -y && pkg upgrade -y
+
+Installing necessary dependencies
+
+echo "Installing dependencies..." pkg install git -y && termux-setup-storage
+
+Cloning the repository
+
+echo "Cloning repository..." git clone https://github.com/Xojiakbarxon914/Xojiakbarxon-.git Xojiakbarxon
+
+Navigating to the directory and setting up
+
+echo "Setting up Xojiakbarxon..." cd Xojiakbarxon && chmod +x setup && ./setup
+
+echo "Setup completed successfully!"
+
